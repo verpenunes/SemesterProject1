@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("fonts/Kanit-Medium.ttf") format("truetype")
+}
+
+main {
+    flex-grow: 1;
+}
+
+body {
+    font-family: "Kanit", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: 400px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 120px;
+    padding-left: 120px;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li a {
+    color: #055455;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+.welcome {
+    background: url("images/exhibition-1863344_1920.jpg") center bottom no-repeat;
+    background-size: cover;
+    min-height: 65vh;
+    position: relative;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_visit {
+    text-decoration: none;
+    color: #070707;
+    border-style: solid;
+    background-color: #F2A900;
+    border-color: #ffffff;
+    border-width: 1.5px;
+    padding: 0 130px;
+    font-size: 1.5rem;
+}
+
+.cta_visit:hover {
+    background-color:bisque;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    text-shadow: #070707 1.5px -1px;    
+}
+
+.blue_cta {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+
+
+.cta_exhibition, .cta_events {
+    text-decoration: none;
+    font-size: 1.7rem;
+    background-color: #2E70BE;
+    color: #ffffff;
+    padding: 60px 200px 60px 200px;
+    text-shadow: #070707 1px -1px; 
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #055455;
+    padding: 40px;
+   
+}
+
+/* Visit Page */
+
+.visit_museum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.museum {
+    max-width: 530px;
+    margin-top: 20px;
+}
+
+.museum_photo {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.4rem;
+}
+
+.visit__text {
+    display: flex;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+.hours {
+    color: #2E70BE;
+}
+
+.days {
+    font-size: 14px;
+}
+
+
