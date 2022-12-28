@@ -62,6 +62,7 @@ li a {
 }
 
 .cta_visit:hover {
+    transition: 0.5s;
     background-color:bisque;
 }
 
@@ -77,7 +78,10 @@ h1 {
     margin-top: 100px;
 }
 
-
+.cta_exhibition:hover, .cta_events:hover {
+    transition: 0.5s;
+    background-color: #508cd5;
+}
 
 .cta_exhibition, .cta_events {
     text-decoration: none;
@@ -91,8 +95,7 @@ h1 {
 footer {
     margin-top: 100px;
     background-color: #055455;
-    padding: 40px;
-   
+    padding: 40px;  
 }
 
 /* Visit Page */
@@ -120,18 +123,76 @@ h2 {
     font-size: 3.4rem;
 }
 
-.visit__text {
+.visit__text, .location_address {
     display: flex;
     margin: 0 auto;
     max-width: 720px;
+    flex-direction: column;
 }
 
-.hours {
+h3 {
+    display: flex;
     color: #2E70BE;
 }
 
 .days {
     font-size: 14px;
 }
+
+/* Explore page */
+
+h4 {
+    text-decoration: none;
+    font-size: 3rem;
+    background-color: #2E70BE;
+    color: #ffffff;
+    padding: 50px 40px;
+    margin: 0 140px;
+}
+
+.kids, .library, .researchers {
+    max-width: 280px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.kids, .researchers, .library {
+    margin-left: 50px;
+}
+
+.explore {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.for__kids {
+    display: flex;
+    padding: 40px;
+
+    font-size: 14px;
+    align-items: center;   
+}
+
+.for__kids p {
+    margin-right: 90px;
+}
+
+.text {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-bottom: -30px;
+
+}
+
+
+
+
+
+
+
+
 
 
