@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Kanit";
-    src: url("fonts/Kanit-Medium.ttf") format("truetype")
+    src: url("fonts/Kanit-Medium.ttf") format("truetype");
 }
 
 main {
@@ -29,7 +29,6 @@ ul {
 li a {
     color: #055455;
     text-decoration: none;
-    margin: 0 20px;
 }
 
 .expl:hover {
@@ -81,6 +80,8 @@ h1 {
     text-shadow: #070707 1px -1px; 
 }
 
+
+
 /* Visit Page */
 
 h2 {
@@ -101,53 +102,38 @@ h3 {
 
 h4 {
     text-decoration: none;
-    font-size: 3rem;
     background-color: #2E70BE;
     color: #ffffff;
-    padding: 50px 40px;
-    margin: 0 140px;
     letter-spacing: 2px;
+    justify-content: left;
 }
 
-.kids, .library, .researchers {
-    max-width: 280px;
-    padding-left: 0px;
-    padding-right: 20px;
+.fr_kid {
+    color:#2E70BE;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
 }
 
-.kids, .researchers, .library {
-    margin-left: 0px;
-}
-
-.explore {
+.for__kids, .for__teachers, .researchers {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.for__kids {
-    display: flex;
+.box {
+    margin: 0 auto;
+}
+
+.photo {
+    margin-top: 20px;
+}
+
+.for__kid {
+    margin-top: 20px;
+    color: #212529;
     background-color: aliceblue;
-    border-top: 3px solid rgb(76, 76, 149);
     border-right: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    padding: 0px;
-    margin: 0 140px;
-    font-size: 15px;
-    align-items: center;   
-}
-
-.for__kids p {
-    margin-right: 30px;
-    line-height: 1.6;
-}
-
-.text {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 140px;
-    margin-bottom: 0px;
+    border-bottom: 1px solid #cccccc; 
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
 }
 
 /* Get Involved */
@@ -208,9 +194,9 @@ footer {
 }
 
 /* Media Queries - Home Page */
-@media screen and (min-width: 400px){
+@media (min-width: 400px) {
     .logo {
-        width: 250px;
+        width: 280px;
         padding-left: 50px;  
     }
 
@@ -219,7 +205,7 @@ footer {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .cta_visit {
@@ -257,11 +243,12 @@ footer {
 @media (min-width: 600px){
     .logo {
         width: 320px;
-        padding-left: 70px;
+        padding-left: 50px;
     }
 
     li a {
         font-size: 1.1rem;
+        margin: 0 30px;
     }
 
     header {
@@ -269,7 +256,7 @@ footer {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .cta_visit {
@@ -281,23 +268,24 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .cta_exhibition, .cta_events {
-        padding: 40px 100px 40px 100px;
+        padding: 40px 75px 40px 75px;
         font-size: 1.1rem;
     }
 }
 
 @media (min-width: 800px){
     .logo {
-        width:400px;
+        width: 380px;
         padding-left: 120px;
     }
 
     li a {
         font-size: 1.5rem;
+        margin: 0 50px;
     }
 
     header {
@@ -305,7 +293,7 @@ footer {
     }
 
     h1 {
-        font-size: 4.5rem;
+        font-size: 3.6rem;
     }
 
     .cta_visit {
@@ -322,7 +310,7 @@ footer {
     }
 
     .cta_exhibition, .cta_events {
-        padding: 60px 200px 60px 200px;
+        padding: 50px 90px 50px 90px;
         font-size: 1.7rem;
     }
 }
@@ -395,7 +383,127 @@ footer {
     }
 }
 
+/* Media Queries - Explore Page */
 
+@media (min-width: 400px) {
+    h4 {
+        display: flex;
+        font-size: 2rem;
+        padding: 20px 20px;
+        margin: 0 60px;
+    }
+
+    .for__kid {
+        padding: 0px 10px 5px;
+        font-size: 12px;   
+        width: 360px; 
+        margin-top: -10px;
+    }
+
+    .fr_kid {
+        font-size: 16px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        width: 381px;
+        height: 240px;  
+    }
+
+}
+
+@media (min-width: 600px) {
+    h4 {
+        font-size: 2.6rem;
+        padding: 30px 40px;
+        margin: 0 60px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        height: 301px;
+
+    }
+
+    .for__kid {
+        border-top: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        padding: 5px 25px 5px 21px;
+        height: 193px;
+        font-size: 0.7rem;
+        line-height: 0.8;
+        margin-top: 14px;
+        border-top: 3px solid rgb(76, 76, 149); 
+    }
+
+    .for__kid p {
+        margin: 10px auto;
+        max-width: 600px;
+        line-height: 1.5;
+    }
+
+    .fr_kid {
+        font-size: 18px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 205px;
+    }
+
+}
+
+@media (min-width: 800px) {
+    h4 {
+        font-size: 3rem;
+        padding: 50px 40px;
+        margin: 0 140px;
+    }
+
+    h4, .for__kid, .box {
+        width: 900px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+    }
+
+    .for__kid {
+        margin-top: 14px;
+        word-spacing: 1px;
+        line-height: 0.3;
+        padding: 5px 25px 0px 20px;
+        font-size: 0.8rem;
+        height: 242px;
+        border-top: 3px solid rgb(76, 76, 149); 
+    }
+
+    .fr_kid {
+        font-size: 20px;
+    }
+
+    .for__kid p {
+        margin: 18px auto;
+        padding-bottom: 10px;
+    }
+
+    .photo {
+        width: 280px;
+        height: 250px;
+    }
+}
+
+/* Media queries - Exhibition Spaces */
 
 
 
