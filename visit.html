@@ -8,14 +8,19 @@
     <title>Visit | Community Science Museum</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+        </div>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
         <nav>
             <ul>
-                <li><a href="explore.html">EXPLORE</a></li>
-                <li><a href="getinvolved">GET INVOLVED</a></li>
+                <li><a class="expl" href="explore.html">EXPLORE</a></li>
+                <li><a class="expl" href="getinvolved">GET INVOLVED</a></li>
             </ul>
         </nav>
     </header>
@@ -65,6 +70,28 @@
             </div>
         </section>
     </main>
-    <footer>Copyright &copy;</footer>
+    <footer>
+        <div class="ft-all">
+            <div class="col-ft">
+                <div>VISITING ADDRESS</div>
+                  Community Science Museum
+                  <br>
+                  Oslo Street 338
+                  <br>
+                  0103 Oslo Norway
+                <br>
+                </div>
+                <div id="ver_line"></div>
+                <div class="social_media">
+                    <strong>FOLLOW US</strong>
+                    <br>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                    <br>
+                    <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                    <br>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                </div>
+        </div>
+    </footer>
 </body>
 </html>

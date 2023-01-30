@@ -17,8 +17,33 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 45px;
+    z-index: 1000;
+    right: 0px;
+}
+
+li {
+    display: block;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+.fa-bars {
+    width: 18px;
+    color:#055455
 }
 
 ul {
@@ -79,8 +104,6 @@ h1 {
     color: #ffffff;
     text-shadow: #070707 1px -1px; 
 }
-
-
 
 /* Visit Page */
 
@@ -176,6 +199,7 @@ footer {
     background-color: #055455;
     padding: 40px 50px;
     color: #ffffff;
+    letter-spacing: 1.2px;
 }
 
 .ft-all {
@@ -183,14 +207,21 @@ footer {
     flex-direction: row;
 }
 
-.social_media {
-    padding-left: 40px;
+.social_media a {
+    color: #FFFFFF;
+    text-decoration: none;
+
 }
 
 #ver_line {
     margin-left: 30px;
-    height: 150px;
+    height: 120px;
     border-right: 1px solid rgb(155, 236, 220);
+}
+
+.fa-square-instagram, .fa-square-twitter, .fa-square-facebook {
+    color: #FFFFFF;
+    margin-right: 5px;
 }
 
 /* Media Queries - Home Page */
@@ -207,6 +238,14 @@ footer {
     h1 {
         font-size: 1.8rem;
     }
+
+    nav ul {
+        display: block;
+        padding: 20px 10px;
+        background-color:#FFFFFF;
+        font-size: 20px;
+    }
+
 
     .cta_visit {
         padding: 0 100px;
@@ -238,17 +277,31 @@ footer {
     .days {
         margin-left: 40px;
     }
+
+    .ft-all {
+        justify-content: space-around;                               
+    }
+
+    .col-ft, .social_media {
+        font-size: 13px;
+    }
+
+    #ver_line {
+        display: none;
+    }
 }
 
 @media (min-width: 600px){
     .logo {
-        width: 320px;
+        width: 270px;
         padding-left: 50px;
+        padding-right: 0px;
     }
 
     li a {
-        font-size: 1.1rem;
-        margin: 0 30px;
+        font-size: 16px;
+        margin: 0 10px;
+        padding-left: 0px;
     }
 
     header {
@@ -256,7 +309,20 @@ footer {
     }
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
+    }
+
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    header label {
+        display: none;
     }
 
     .cta_visit {
@@ -275,17 +341,29 @@ footer {
         padding: 40px 75px 40px 75px;
         font-size: 1.1rem;
     }
+
+    .ft-all {
+        justify-content: space-around;
+    }
+
+    .col-ft, .social_media {
+        font-size: 16px;
+    }
+
+    #ver_line {
+        display: flex;
+    }
 }
 
 @media (min-width: 800px){
     .logo {
-        width: 380px;
+        width: 330px;
         padding-left: 120px;
     }
 
     li a {
-        font-size: 1.5rem;
-        margin: 0 50px;
+        font-size: 16px;
+        margin: 0 5px;
     }
 
     header {
@@ -294,6 +372,14 @@ footer {
 
     h1 {
         font-size: 3.6rem;
+    }
+
+    nav {
+        display: flex;
+    }
+    
+    .fa-bars {
+        display: none;
     }
 
     .cta_visit {
@@ -312,6 +398,18 @@ footer {
     .cta_exhibition, .cta_events {
         padding: 50px 90px 50px 90px;
         font-size: 1.7rem;
+    }
+
+    .ft-all {
+        justify-content: space-evenly;
+    }
+
+    .col-ft, .social_media {
+        font-size: 18px;
+    }
+
+    #ver_line {
+        display: flex;
     }
 }
 
