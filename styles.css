@@ -29,10 +29,6 @@ nav {
     right: 0px;
 }
 
-li {
-    display: block;
-}
-
 #hamburger-menu {
     display: none;
 }
@@ -54,6 +50,11 @@ ul {
 li a {
     color: #055455;
     text-decoration: none;
+}
+
+.blue {
+    color:#2E70BE;
+    font-weight: 500;
 }
 
 .expl:hover {
@@ -131,12 +132,6 @@ h4 {
     justify-content: left;
 }
 
-.fr_kid {
-    color:#2E70BE;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-}
-
 .for__kids, .for__teachers, .researchers {
     display: flex;
 }
@@ -164,7 +159,6 @@ h4 {
 .get_involved_photo {
     background: url("images/andrew-ruiz-348421\ \(1\).jpg") center bottom no-repeat;
     background-size: cover;
-    min-height: 55vh;
     position: relative;
     background-position-x: center;
     background-position-y: top;
@@ -172,24 +166,20 @@ h4 {
     justify-content: center;
 }
 
-.get_inv {
-    margin-top: 250px;
+.get__inv {
+    letter-spacing: 2px;
 }
 
 .gt_sup {
+    max-width: 600px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-.support, .support_2, .support_3 {
-    background-color: #2E70BE;
-    color: #ffffff;
-    padding: 30px 70px;
-    margin-left: 30px;
-    margin-right: 100px;
-
+.support, .internships, .volunteer {
+    color: #070707;
+    font-family:'Kanit', Courier, monospace;
 }
 
 /* Footer */
@@ -245,7 +235,6 @@ footer {
         background-color:#FFFFFF;
         font-size: 20px;
     }
-
 
     .cta_visit {
         padding: 0 100px;
@@ -377,7 +366,7 @@ footer {
     nav {
         display: flex;
     }
-    
+
     .fa-bars {
         display: none;
     }
@@ -498,7 +487,7 @@ footer {
         margin-top: -10px;
     }
 
-    .fr_kid {
+    .blue {
         font-size: 16px;
     }
 
@@ -548,7 +537,7 @@ footer {
         line-height: 1.5;
     }
 
-    .fr_kid {
+    .blue {
         font-size: 18px;
     }
 
@@ -586,7 +575,7 @@ footer {
         border-top: 3px solid rgb(76, 76, 149); 
     }
 
-    .fr_kid {
+    .blue {
         font-size: 20px;
     }
 
@@ -601,7 +590,69 @@ footer {
     }
 }
 
-/* Media queries - Exhibition Spaces */
+/* Media queries - Get Involved page */
+
+@media (min-width: 400px) {
+    .get__inv {
+        font-size: 60px;
+    }
+
+    .gt_sup {
+        margin-top: 50px;
+        padding-left: 70px;
+        padding-right: 60px;
+    }
+
+    .support, .internships, .volunteer {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .get__inv {
+        font-size: 80px;
+    }
+
+    .get_involved_photo {
+        height: 380px;
+    }
+
+    .get_inv {
+        margin-top: 60px;
+    }
+
+    .gt_sup {
+        padding-left: 90px;
+    }
+
+    .support, .internships, .volunteer {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .get__inv {
+        font-size: 120px;
+    }
+
+    .get_involved_photo {
+        height: 500px;
+    }
+
+    .get_inv {
+        margin-top: 110px;
+    }
+
+    .support, .internships, .volunteer {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+
 
 
 
