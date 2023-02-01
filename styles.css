@@ -62,7 +62,7 @@ li a {
 }
 
 .welcome {
-    background: url("images/exhibition-1863344_1920.jpg") center bottom no-repeat;
+    background: url("images/exhibition-1863344_1920.avif") center bottom no-repeat;
     background-size: cover;
     min-height: 65vh;
     position: relative;
@@ -157,7 +157,7 @@ h4 {
 /* Get Involved */
 
 .get_involved_photo {
-    background: url("images/andrew-ruiz-348421\ \(1\).jpg") center bottom no-repeat;
+    background: url("images/andrew-ruiz-348421-_1_.avif") center bottom no-repeat;
     background-size: cover;
     position: relative;
     background-position-x: center;
