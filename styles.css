@@ -52,6 +52,11 @@ li a {
     text-decoration: none;
 }
 
+.blue__box {
+    display: flex;
+    margin: 0 auto;
+}
+
 .blue {
     color:#2E70BE;
     font-weight: 500;
@@ -64,7 +69,6 @@ li a {
 .welcome {
     background: url("images/exhibition-1863344_1920.avif") center bottom no-repeat;
     background-size: cover;
-    min-height: 65vh;
     position: relative;
     background-position-x: center;
     background-position-y: top;
@@ -90,8 +94,7 @@ li a {
 
 h1 {
     color: #ffffff;
-    text-shadow: #070707 1.5px -1px; 
-    margin-top: 150px;   
+    text-shadow: #070707 1.5px -1px;  
 }
 
 .cta_exhibition:hover, .cta_events:hover {
@@ -106,6 +109,12 @@ h1 {
     text-shadow: #070707 1px -1px; 
 }
 
+.copyright {
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: right;
+}
+
 /* Visit Page */
 
 h2 {
@@ -118,9 +127,11 @@ h3 {
     color: #2E70BE;
 }
 
-.days {
-    font-size: 14px;
+.visit__text, .location_address {
+    margin: auto;
 }
+
+
 
 /* Explore page */
 
@@ -128,8 +139,8 @@ h4 {
     text-decoration: none;
     background-color: #2E70BE;
     color: #ffffff;
-    letter-spacing: 2px;
-    justify-content: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .for__kids, .for__teachers, .researchers {
@@ -221,12 +232,17 @@ footer {
         padding-left: 50px;  
     }
 
+    .welcome {
+        height: 44vh;
+    }
+
     li a {
         font-size: 0.8rem;
     }
 
     h1 {
         font-size: 1.8rem;
+        margin-top: 60px; 
     }
 
     nav ul {
@@ -287,8 +303,12 @@ footer {
         padding-right: 0px;
     }
 
+    .welcome {
+        height: 54vh;
+    }
+
     li a {
-        font-size: 16px;
+        font-size: 0.9rem;
         margin: 0 10px;
         padding-left: 0px;
     }
@@ -350,8 +370,12 @@ footer {
         padding-left: 120px;
     }
 
+    .welcome {
+        min-height: 65vh;
+    }
+
     li a {
-        font-size: 16px;
+        font-size: 1rem;
         margin: 0 5px;
     }
 
@@ -361,6 +385,7 @@ footer {
 
     h1 {
         font-size: 3.6rem;
+        margin-top: 110px; 
     }
 
     nav {
@@ -405,52 +430,62 @@ footer {
 /* Media Queries - Visit Page */
 @media (min-width: 400px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .visit__text, .location_address {
-        font-size: 80%;
+        font-size: 0.9rem;
         line-height: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
+        max-width: 380px;
+    }
+
+    .days {
+        font-size: 0.9rem;
+        margin-left: 100px;
     }
 
     .museum {
-        max-width: 380px;
+        max-width: 420px;
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: 100px;
     }
 }
 
 @media (min-width: 600px) {
     h2 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
     }
 
     .visit__text, .location_address {
         font-size: 100%;
-        line-height: 30px;
+        line-height: 25px;
+        max-width: 600px;
+    }
+
+    .days {
+        margin-left: 90px;
     }
 
     .museum {
-        max-width: 460px;
+        max-width: 500px;
         margin-top: 20px;
+        margin-left: 90px;
     }
 }
 
 @media (min-width: 800px) {
     h2 {
-        font-size: 3.5rem;
+        font-size: 3.4rem;
     }
 
     .visit__text, .location_address {
-        font-size: 100%;
-        line-height: 30px;
-        display: flex;
-        margin: 0 auto;
-        max-width: 750px;
-        flex-direction: column;
-        }
+        line-height: 27px;
+        max-width: 700px;
+    }
+
+    .days {
+        margin-left: 0px;
+    }
 
     .museum {
         max-width: 530px;
@@ -475,16 +510,28 @@ footer {
 @media (min-width: 400px) {
     h4 {
         display: flex;
-        font-size: 2rem;
-        padding: 20px 20px;
-        margin: 0 60px;
+        align-items: center;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        width: 1300px;
+        height: 90px;
+        padding-left: 60px;
+    }
+
+    h4, .for__kid, .box {
+        width: 340px;
+    }
+
+    .blue__box {
+        display: flex;
+        justify-content: center;
     }
 
     .for__kid {
         padding: 0px 10px 5px;
         font-size: 12px;   
-        width: 360px; 
-        margin-top: -10px;
+        width: 319px; 
+        margin-top: -8px;
     }
 
     .blue {
@@ -498,17 +545,25 @@ footer {
     }
 
     .photo {
-        width: 381px;
-        height: 240px;  
+        width: 340px;
+        height: 220px;  
     }
 
 }
 
 @media (min-width: 600px) {
     h4 {
-        font-size: 2.6rem;
-        padding: 30px 40px;
-        margin: 0 60px;
+        font-size: 1.7rem;
+        padding-left: 50px;
+    }
+
+    h4, .for__kid, .box {
+        width: 600px;
+    }
+
+    .blue__box {
+        width: 600px;
+        height: 100px;
     }
 
     .box {
@@ -550,19 +605,24 @@ footer {
 
 @media (min-width: 800px) {
     h4 {
-        font-size: 3rem;
-        padding: 50px 40px;
-        margin: 0 140px;
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+        padding-left: 60px;
     }
 
     h4, .for__kid, .box {
-        width: 900px;
+        width: 800px;
+    }
+
+    .blue__box {
+        width: 800px;
+        height: 120px;
     }
 
     .box {
         display: flex;
         flex-direction: row;
-        height: 280px;
+        height: 270px;
     }
 
     .for__kid {
@@ -595,6 +655,7 @@ footer {
 @media (min-width: 400px) {
     .get__inv {
         font-size: 60px;
+        margin-top: 100px;
     }
 
     .gt_sup {
@@ -619,7 +680,7 @@ footer {
     }
 
     .get_inv {
-        margin-top: 60px;
+        margin-top: 120px;
     }
 
     .gt_sup {
@@ -639,11 +700,11 @@ footer {
     }
 
     .get_involved_photo {
-        height: 500px;
+        height: 480px;
     }
 
     .get_inv {
-        margin-top: 110px;
+        margin-top: 150px;
     }
 
     .support, .internships, .volunteer {
