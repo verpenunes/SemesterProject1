@@ -127,11 +127,13 @@ h3 {
     color: #2E70BE;
 }
 
+.museum {
+    display: flex;
+}
+
 .visit__text, .location_address {
     margin: auto;
 }
-
-
 
 /* Explore page */
 
@@ -226,7 +228,7 @@ footer {
 }
 
 /* Media Queries - Home Page */
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     .logo {
         width: 280px;
         padding-left: 50px;  
@@ -428,26 +430,26 @@ footer {
 }
 
 /* Media Queries - Visit Page */
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .visit__text, .location_address {
         font-size: 0.9rem;
-        line-height: 20px;
-        max-width: 380px;
+        line-height: 19px;
+        max-width: 350px;
     }
 
     .days {
         font-size: 0.9rem;
-        margin-left: 100px;
+        text-align: center;
     }
 
     .museum {
-        max-width: 420px;
+        max-width: 400px;
         margin-top: 20px;
-        margin-left: 100px;
+        margin: auto;
     }
 }
 
@@ -462,14 +464,9 @@ footer {
         max-width: 600px;
     }
 
-    .days {
-        margin-left: 90px;
-    }
-
     .museum {
-        max-width: 500px;
+        max-width: 480px;
         margin-top: 20px;
-        margin-left: 90px;
     }
 }
 
@@ -483,13 +480,10 @@ footer {
         max-width: 700px;
     }
 
-    .days {
-        margin-left: 0px;
-    }
-
     .museum {
-        max-width: 530px;
+        max-width: 500px;
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .visit_museum {
@@ -507,7 +501,7 @@ footer {
 
 /* Media Queries - Explore Page */
 
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     h4 {
         display: flex;
         align-items: center;
@@ -548,7 +542,6 @@ footer {
         width: 340px;
         height: 220px;  
     }
-
 }
 
 @media (min-width: 600px) {
@@ -600,7 +593,6 @@ footer {
         width: 200px;
         height: 205px;
     }
-
 }
 
 @media (min-width: 800px) {
@@ -652,7 +644,7 @@ footer {
 
 /* Media queries - Get Involved page */
 
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     .get__inv {
         font-size: 60px;
         margin-top: 100px;
@@ -691,7 +683,6 @@ footer {
         margin-top: 30px;
         font-size: 15px;
     }
-
 }
 
 @media (min-width: 800px) {
