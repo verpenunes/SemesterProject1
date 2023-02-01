@@ -432,7 +432,8 @@ footer {
 /* Media Queries - Visit Page */
 @media (min-width: 390px) {
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        white-space: nowrap;
     }
 
     .visit__text, .location_address {
@@ -505,11 +506,11 @@ footer {
     h4 {
         display: flex;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         white-space: nowrap;
         width: 1300px;
         height: 90px;
-        padding-left: 60px;
+        padding-left: 26px;
     }
 
     h4, .for__kid, .box {
