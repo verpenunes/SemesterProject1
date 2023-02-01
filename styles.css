@@ -243,7 +243,7 @@ footer {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-top: 60px; 
     }
 
@@ -290,7 +290,7 @@ footer {
     }
 
     .col-ft, .social_media {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     #ver_line {
@@ -646,7 +646,7 @@ footer {
 
 @media (min-width: 390px) {
     .get__inv {
-        font-size: 60px;
+        font-size: 40px;
         margin-top: 100px;
     }
 
@@ -657,7 +657,7 @@ footer {
     }
 
     .support, .internships, .volunteer {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
