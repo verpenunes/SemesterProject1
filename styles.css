@@ -566,7 +566,6 @@ footer {
         justify-content: center;
         margin-top: 20px;
         height: 301px;
-
     }
 
     .for__kid {
@@ -583,7 +582,8 @@ footer {
     .for__kid p {
         margin: 10px auto;
         max-width: 600px;
-        line-height: 1.5;
+        line-height: 0.9;
+        font-size: 0.8rem;
     }
 
     .blue {
@@ -635,6 +635,8 @@ footer {
     .for__kid p {
         margin: 18px auto;
         padding-bottom: 10px;
+        line-height: 1.1;
+        font-size: 0.9rem;
     }
 
     .photo {
