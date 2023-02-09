@@ -116,7 +116,6 @@ h1 {
 }
 
 /* Visit Page */
-
 h2 {
     display: flex;
     justify-content: center;
@@ -136,7 +135,6 @@ h3 {
 }
 
 /* Explore page */
-
 h4 {
     display: flex;
     align-items: center;
@@ -166,7 +164,6 @@ h4 {
 }
 
 /* Get Involved */
-
 .get_involved_photo {
     background: url("images/andrew-ruiz-348421-_1_.avif") center bottom no-repeat;
     background-size: cover;
@@ -194,7 +191,6 @@ h4 {
 }
 
 /* Footer */
-
 footer {
     margin-top: 120px;
     background-color: #055455;
@@ -410,8 +406,12 @@ footer {
     }
 
     .cta_exhibition, .cta_events {
-        padding: 50px 90px 50px 90px;
+        padding: 50px 100px 50px 100px;
         font-size: 1.7rem;
+    }
+
+    .cta_events {
+        letter-spacing: 1.5px;
     }
 
     .ft-all {
@@ -498,8 +498,7 @@ footer {
     }
 }
 
-/* Media Queries - Explore Page */
-
+/* Media Queries - Explore Page / Exhibition Spaces / Special Events Page */
 @media (min-width: 360px) and (max-width: 960px)  {
     h4 {
         font-size: 1.4rem;
@@ -645,7 +644,6 @@ footer {
 }
 
 /* Media queries - Get Involved page */
-
 @media (min-width: 360px) and (max-width: 960px) {
     .get__inv {
         font-size: 40px;
@@ -662,7 +660,6 @@ footer {
         font-size: 13px;
     }
 }
-
 
 @media (min-width: 600px) {
     .get__inv {
