@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("../fonts/Kanit-Medium.ttf") format("truetype");
+}
+
+main {
+    flex-grow: 1;
+}
+
+body {
+    font-family: "Kanit", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #FFFFFF
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 45px;
+    z-index: 1000;
+    right: 0px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+.fa-bars {
+    width: 18px;
+    color:#055455
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li a {
+    color: #055455;
+    text-decoration: none;
+}
+
+.blue__box {
+    display: flex;
+    margin: 0 auto;
+}
+
+.blue {
+    color:#254871;
+    font-weight: 500;
+}
+
+.expl:hover {
+    color: #0d847e;
+}
+
+.welcome {
+    background: url("../images/exhibition-1863344_1920.avif") center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-x: center;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta_visit {
+    text-decoration: none;
+    color: #070707;
+    border-style: solid;
+    background-color: #F2A900;
+    border-color: #ffffff;
+    border-width: 1.5px;
+}
+
+.cta_visit:hover {
+    transition: 0.5s;
+    background-color:bisque;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: #070707 1.5px -1px;  
+}
+
+.cta_exhibition:hover, .cta_events:hover {
+    transition: 0.5s;
+    background-color: #508cd5;
+}
+
+.cta_exhibition, .cta_events {
+    text-decoration: none;
+    background-color: #2E70BE;
+    color: #ffffff;
+    text-shadow: #070707 1px -1px; 
+}
+
+.copyright {
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: right;
+}
+
+/* Visit Page */
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    color: #2E70BE;
+}
+
+.museum {
+    display: flex;
+}
+
+.visit__text, .location_address {
+    margin: auto;
+}
+
+/* Explore page */
+h4 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #2E70BE;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.for__kids, .for__teachers, .researchers {
+    display: flex;
+}
+
+.box {
+    margin: 0 auto;
+}
+
+.for__kid {
+    margin-top: 20px;
+    color: #212529;
+    background-color: aliceblue;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; 
+    border-left: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+
+/* Get Involved */
+.get_involved_photo {
+    background: url("../images/andrew-ruiz-348421-_1_.avif") center bottom no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-x: center;
+    background-position-y: top;
+    display: flex;
+    justify-content: center;
+}
+
+.get__inv {
+    letter-spacing: 2px;
+}
+
+.gt_sup {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.support, .internships, .volunteer {
+    color: #070707;
+    font-family:'Kanit', Courier, monospace;
+}
+
+/* Footer */
+footer {
+    margin-top: 120px;
+    background-color: #055455;
+    padding: 40px 50px;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.ft-all {
+    display: flex;
+    flex-direction: row;
+}
+
+.social_media a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+#ver_line {
+    margin-left: 30px;
+    height: 120px;
+    border-right: 1px solid rgb(155, 236, 220);
+}
+
+.fa-square-instagram, .fa-square-twitter, .fa-square-facebook {
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
