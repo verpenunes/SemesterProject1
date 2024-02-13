@@ -2,6 +2,8 @@
 
 <img width="1196" alt="bilde" src="https://github.com/verpenunes/SemesterProject1/assets/106631829/ccf5f21b-c5eb-402b-af99-df892670dbd7">
 
+![Community Science Museum](https://velvety-monstera-64ffbe.netlify.app/) was created using HTML and CSS.
+
 ## Description
 The project exam should reflect the student's creative and technical knowledge and skills based on the first semester curriculum. This includes design principles, project management, communication technology, and developing with HTML/CSS.<br/>
 <ul>
