@@ -5,12 +5,7 @@
 [Community Science Museum](https://velvety-monstera-64ffbe.netlify.app/) was created using HTML and CSS.
 
 ## Description
-The project exam should reflect the student's creative and technical knowledge and skills based on the first semester curriculum. This includes design principles, project management, communication technology, and developing with HTML/CSS.<br/>
-<ul>
-  <li>Apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS.</li>
-  <li>Masters industry-relevant tools, techniques and expressions in design process and development of websites in accordance with regulations and guidelines for universal design.
-  <li>Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented.</li>
-</ul>
+The project includes design principles, project management, communication technology, and developing with HTML/CSS.<br/>
 
 ## Build With
 <ul>
