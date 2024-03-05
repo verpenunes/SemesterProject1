@@ -25,6 +25,11 @@ The project includes design principles, project management, communication techno
 ```
 npm install
 ```
+## Contributinig
+
+Should you wish to contribute to the project, please initiate a pull request for code review, or
+create an issue to report any problems you encounter or propose new features you'd like to see added.
+
 
 ## Contact
 
