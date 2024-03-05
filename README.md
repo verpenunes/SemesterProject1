@@ -29,3 +29,7 @@ npm install
 ## Contact
 
 [My LinkedIn page](www.linkedin.com)
+
+## License
+
+No license required. Project is free to clone for example or educational purposes.
