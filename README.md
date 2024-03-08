@@ -5,7 +5,7 @@
 [Community Science Museum](https://velvety-monstera-64ffbe.netlify.app/) was created using HTML and CSS.
 
 ## Description
-The project includes design principles, project management, communication technology, and developing with HTML/CSS.<br/>
+This project aims to put professional knowledge into practice in solving practical web development problems, focusing on the design process, aesthetics and mastering HTML and CSS.<br/>
 
 ## Build With
 <ul>
@@ -28,7 +28,7 @@ npm install
 ## Contributinig
 
 Should you wish to contribute to the project, please initiate a pull request for code review, or
-create an issue to report any problems you encounter or propose new features you'd like to see added.
+create an issue to report any problems or propose new features you'd like to see added.
 
 
 ## Contact
@@ -37,4 +37,4 @@ create an issue to report any problems you encounter or propose new features you
 
 ## License
 
-No license required. Project is free to clone for example or educational purposes.
+No license is required. The project is free to clone for example or for educational purposes.
